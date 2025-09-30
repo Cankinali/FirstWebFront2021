@@ -1,0 +1,80 @@
+a
+{
+    text-decoration:none;
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(73, 73, 73, 0.75),rgba(73, 73, 73, 0.75)),url(./images/backgrounds/nature-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navbar{
+    width:85%;
+    margin:auto;
+    padding:35px 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.navbar h1{
+    color:whitesmoke;
+    font-size:50px;
+    font-family: sans-serif;
+    margin:10px 5px;
+}
+.navbar img{
+    height:10vh;
+    width:120px;
+    cursor:pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    color:whitesmoke;
+    text-transform:uppercase;
+}
+.navbar ul li::after{
+    content:"";
+    height:3px;
+    width:0;
+    background: rgb(56, 51, 50);
+    position: absolute;
+    left: 0;
+    bottom:-10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {
+    width:100%;
+}
+.container{
+    max-width:1250px;
+    margin:auto;
+    overflow:hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery{
+    margin: 5px;
+    border: 1px solid;
+    float: left;
+    width:400px;
+}
+.gallery img{
+    width:400px;
+    height:auto;
+}
+.description{
+    padding:15px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    color:white;
+}
